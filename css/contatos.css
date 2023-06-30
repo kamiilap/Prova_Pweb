@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#DA70D6, #DDA0DD);
+    overflow-y: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+nav ul li {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.contatos {
+    /* width: 1150px; */
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contatos .card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: transparent;
+    margin: 20px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+    box-shadow: 30px 30px 60px -40px #DBC4FF;
+}
+
+.contatos .card i {
+    transition: 0.5;
+}
+
+.contatos .card h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.contatos .card .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.contatos .card .content p {
+    color: white;
+    transition: 0.5s;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.contatos .card:hover {
+    background-color: #FF69B4;
+    color: white;
+    margin-top: -30px;
+}
+
+.contatos .card:hover i {
+    filter: invert(1);
+}
+
+.contatos .card:hover .content p {
+    color: white;
+}
+
+.contatos .card .content button {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.contatos .card .content button a {
+    color: #000;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 20px;
+}
